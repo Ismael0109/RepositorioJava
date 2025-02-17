@@ -4,29 +4,23 @@ import util.Teclado;
 
 public class Question12 {
 	/*
-	 * Desenvolver um programa que pergunte 3 valores (variáveis a, b e c) 
-	 * e ao final apresente-os dispostos em ordem crescente. 
+	 * Desenvolver um programa que pergunte 5 números inteiros 
+	 * e identifique o maior número e o menor número. 
+
+ 
 	 */
 
 	public static void main(String[] args) {
-		double a, b, c;
+		int n1, n2, n3, n4, n5;
 		
-		a = Teclado.lerDouble("Digite o Primeiro Valor");
-		b = Teclado.lerDouble("Digite o Segundo Valor");
-		c = Teclado.lerDouble("Digite o Terceiro Valor");
+		n1 = Teclado.lerInt("Digite o Primeiro número");
+		n2 = Teclado.lerInt("Digite o Segundo número");
+		n3 = Teclado.lerInt("Digite o Terceiro número");
+		n4 = Teclado.lerInt("Digite o Quarto número");
+		n5 = Teclado.lerInt("Digite o Quinto número");
 		
-		if ((a <= b ) && (b <= c)) {
-			System.out.println(a + b + c);
-			
-		} else if ((b <= a ) && (a >= c)) {
-			System.out.println(b + a + c);
-			
-		} else if ((c <= a ) && (a <= b)) {
-			System.out.println(c + a + c);
-			
-		} else if ((a <= b ) && (a >= c)) {
-			
-		} //continuar
+		//Continuar
+		
 
 	}
 

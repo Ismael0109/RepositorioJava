@@ -4,25 +4,29 @@ import util.Teclado;
 
 public class Question09 {
 	/*
-	 * Desenvolver um programa que pergunte dois números inteiros, 
-	 * e apresente como resultado se o segundo número informado é ou não um divisor do primeiro número informado. 
+	 * Desenvolver um programa que pergunte um número e 
+	 * exiba a informação de que ele é positivo, negativo ou nulo. 
 	 */
-	
+
 	public static void main(String[] args) {
 		
-		int num1, num2, restodiv;
+		int num;
 		
-		num1 = Teclado.lerInt("Digite o Primeiro Número");
-		num2 = Teclado.lerInt("Digite o Segundo Número");
+		num = Teclado.lerInt("Digite um Número inteiro ");
 		
-		restodiv = num1 % num2;
-		
-		if (restodiv == 0) {
-			System.out.println(num2 + " é divisor de " + num1);
+		if (num > 0 ) {
+			
+			System.out.println(num + " é Positivo");
+			
+		}  else if (num == 0) {
+			
+			System.out.println(num + " é Nulo");
+			
 		} else {
-			System.out.println(num2 + " não é divisor de " + num1);
+			System.out.println(num + " é Negativo");
+			
 		}
-		
+
 	}
 
 }

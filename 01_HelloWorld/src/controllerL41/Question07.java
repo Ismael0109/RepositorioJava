@@ -5,23 +5,25 @@ import util.Teclado;
 public class Question07 {
 	
 	/*
-	 * Desenvolver um programa que pergunte um número inteiro qualquer e 
-	 * verifique se ele está na faixa de 1 a 10. 
+	 * Desenvolver um programa que pergunte um valor inteiro positivo ou negativo, 
+	 * e exiba como resposta o módulo deste valor, ou seja, o número lido como sendo positivo. 
 	 */
 
 	public static void main(String[] args) {
 
-		int num;
+		int num, mod; 
 		
-		num = Teclado.lerInt("Digite um Número inteiro ");
+		num = Teclado.lerInt("Digite um Número Inteiro para acharmos seu Módulo");
 		
-		if ((num > 0 ) && (num < 11)) {
+		if (num < 0) {
+			mod = num * (-1);
 			
-			System.out.println(num + " está na faixa de 1 a 10");
+			System.out.println("|" + num + "| = " +  mod);
 			
 		} else {
+			mod = num * (1);
+			System.out.println("|" + num + "| = " +  mod);
 			
-			System.out.println(num + " não está na faixa de 1 a 10");
 		}
 	}
 

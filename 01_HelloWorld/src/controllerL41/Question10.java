@@ -4,50 +4,25 @@ import util.Teclado;
 
 public class Question10 {
 	/*
-	 * Desenvolver um programa que pergunte um número de 3 casas 
-	 * e apresente como resultado somente o algarismo das centenas. 
+	 * Desenvolver um programa que pergunte dois números inteiros, 
+	 * e apresente como resultado se o segundo número informado é ou não um divisor do primeiro número informado. 
 	 */
-
+	
 	public static void main(String[] args) {
-		int num;
 		
-		num = Teclado.lerInt("Digite um número natural que contenha 3 casas");
+		int num1, num2, restodiv;
 		
-		if ((num >= 100) && (num < 200)) {
-			System.out.println("O 1 é o algarismo das centenas");
-			
-		} else if ((num >= 200) && (num < 300)) {
-			System.out.println("O 2 é o algarismo das centenas");
-			
-		} else if ((num >= 300) && (num < 400)) {
-			System.out.println("O 3 é o algarismo das centenas");
-			
-		} else if ((num >= 400) && (num < 500)) {
-			System.out.println("O 4 é o algarismo das centenas");
+		num1 = Teclado.lerInt("Digite o Primeiro Número");
+		num2 = Teclado.lerInt("Digite o Segundo Número");
 		
-		} else if ((num >= 500) && (num < 600)) {
-			System.out.println("O 5 é o algarismo das centenas");
-			
-		} else if ((num >= 600) && (num < 700)) {
-			
-			System.out.println("O 6 é o algarismo das centenas");
-		} else if ((num >= 700) && (num < 800)) {
-			
-			System.out.println("O 7 é o algarismo das centenas");
+		restodiv = num1 % num2;
 		
-		} else if ((num >= 800) && (num < 900)) {
-			System.out.println("O 8 é o algarismo das centenas");
-		
-		} else if ((num >= 900) && (num < 1000)) {
-			System.out.println("O 9 é o algarismo das centenas");
-			
+		if (restodiv == 0) {
+			System.out.println(num2 + " é divisor de " + num1);
 		} else {
-			
-			System.out.println("Você não digitou um número de 3 casas");
+			System.out.println(num2 + " não é divisor de " + num1);
 		}
 		
-		
-
 	}
 
 }
