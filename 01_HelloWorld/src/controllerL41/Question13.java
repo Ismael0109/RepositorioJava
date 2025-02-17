@@ -9,24 +9,31 @@ public class Question13 {
 	 */
 
 	public static void main(String[] args) {
-		double a, b, c;
+		int a, b, c;
 		
-		a = Teclado.lerDouble("Digite o Primeiro Valor");
-		b = Teclado.lerDouble("Digite o Segundo Valor");
-		c = Teclado.lerDouble("Digite o Terceiro Valor");
+		a = Teclado.lerInt("Digite o Primeiro Valor");
+		b = Teclado.lerInt("Digite o Segundo Valor");
+		c = Teclado.lerInt("Digite o Terceiro Valor");
 		
-		if ((a <= b ) && (b <= c)) {
-			System.out.println(a + b + c);
+		if  ((a >= b)  && (a >= c) && (b >= c) ) {
+			System.out.println(a + " - " + b + " - "+ c);
 			
-		} else if ((b <= a ) && (a >= c)) {
-			System.out.println(b + a + c);
+		} else if ((a >= b) && (a >= c) && (b <= c) ) {
+			System.out.println(a + " - " + c + " - "+ b);
 			
-		} else if ((c <= a ) && (a <= b)) {
-			System.out.println(c + a + c);
+		} else if ((b >= a) && (b >= c) && (a >= c) ) {
+			System.out.println(b + " - " + a + " - "+ c);
 			
-		} else if ((a <= b ) && (a >= c)) {
+		} else if ((b >= a) && (b >= c) && (a <= c) ) {
+			System.out.println(b + " - " + c + " - "+ a);
 			
-		} //continuar
+		} else if ((c >= a)  && (c >= b) && (a >= b) ) {
+			System.out.println(c + " - " + a + " - "+ b);
+			
+		} else if ((c >= a)  && (c >= b) && (a <= b) ) {
+			System.out.println(c + " - " + b + " - "+ a);
+			
+		}
 
 	}
 
