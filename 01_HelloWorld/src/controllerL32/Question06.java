@@ -1,5 +1,7 @@
 package controllerL32;
 
+import util.Teclado;
+
 public class Question06 {
 	/*
 	 * Fazer um algoritmo que pergunte o nome de um vendedor, 
@@ -12,6 +14,19 @@ public class Question06 {
 	 */
 
 	public static void main(String[] args) {
+		String nome;
+		double salfix, totvendas, comissao, salfim;
+		
+		nome = Teclado.lerTexto("Olá vendedor! Vamos descobrir qual será seu salário ao final deste mês. Digite seu Nome");
+		salfix = Teclado.lerDouble("Agora preciso saber seu Salário Fixo em R$");
+		totvendas = Teclado.lerDouble("Agora, quantos reais você adquiriu este mês com suas vendas");
+		
+		comissao = totvendas*0.15;
+		salfim = salfix + comissao;
+		
+		System.out.println("Ótimo " + nome + "!! Somando seu Salário fixo(" + salfix + ") a sua Comissão deste Mês(" + 
+		comissao + ") temos seu Salário Final - " + salfim);
+		
 
 	}
 
