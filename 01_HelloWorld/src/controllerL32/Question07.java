@@ -9,7 +9,7 @@ public class Question07 {
 	 */
 
 	public static void main(String[] args) {
-		double valorCompra, numPrest//continua
+		double valorCompra, numPrest; //continua
 
 	}
 
