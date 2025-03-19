@@ -1,6 +1,7 @@
 package util;
 
 import java.io.BufferedReader;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -24,5 +25,8 @@ public class Teclado {
 
 	public static double lerDouble(String texto) {
 		return Double.parseDouble(lerTexto(texto));
+	}
+	public static void fecharScanner() {
+	
 	}
 }

@@ -12,6 +12,7 @@ public class Question02 {
 		
 		
 		do {//1
+			
 			if(num % 2 == 0) {//2
 			soma += num;
 			System.out.println(soma + " ");
