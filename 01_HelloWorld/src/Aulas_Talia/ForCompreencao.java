@@ -1,6 +1,6 @@
 package Aulas_Talia;
 
-import Resolucao.teclado;
+
 import util.Teclado;
 
 public class ForCompreencao {
