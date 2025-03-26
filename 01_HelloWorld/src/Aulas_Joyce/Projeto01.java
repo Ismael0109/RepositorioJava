@@ -22,7 +22,7 @@ public class Projeto01 {
 			opcao = Teclado.lerTexto("Deseja Continuar? (s/n)");
 			
 			
-				while(!(opcao.equalsIgnoreCase("n")) && !(opcao.equalsIgnoreCase("s"))) {
+				  while(!(opcao.equalsIgnoreCase("n")) && !(opcao.equalsIgnoreCase("s"))) {
 					System.out.println("Digite s ou n, Por favor!!");
 					opcao = Teclado.lerTexto("Deseja Continuar? (s/n)");
 			}
