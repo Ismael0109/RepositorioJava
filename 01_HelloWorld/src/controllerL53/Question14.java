@@ -13,26 +13,23 @@ public class Question14 {
 		double media_turma = 0;
 		for(int x = 1; x <=15; x++) {
 		
-		String nome = Teclado.lerTexto("Digite o Nome do Aluno");
-		double nota1 = Teclado.lerDouble("Digite a Primeira Nota deste Aluno");
-		double nota2 = Teclado.lerDouble("Digite a Segunda Nota deste Aluno");
+		String nome = Teclado.lerTexto("Digite o Nome do " + x + "º Aluno");
+		double nota1 = Teclado.lerDouble("Digite a 1º Nota do(a) " + nome);
+		double nota2 = Teclado.lerDouble("Digite a 2º Nota do(a) " + nome);
 		double media = (nota1 + nota2)/2;
 		
 		media_turma += media;
+		System.out.println("Nome -> " + nome);
+		System.out.println("Nota 1 -> " + nota1);
+		System.out.println("Nota 2 -> " + nota2);
+		System.out.println("Média -> " + media);
+		
 		if(media >= 5) {
-			System.out.println("Nome -> " + nome);
-			System.out.println("Nota 1 -> " + nota1);
-			System.out.println("Nota 2 -> " + nota2);
-			System.out.println("Média -> " + media);
+			
 			System.out.println("APROVADO");
 				
-			
-			
 		}else {
-			System.out.println("Nome -> " + nome);
-			System.out.println("Nota 1 -> " + nota1);
-			System.out.println("Nota 2 -> " + nota2);
-			System.out.println("Média -> " + media);
+			
 			System.out.println("REPROVADO");
 		}
 		System.out.println("*****PRÓXIMO*****");
@@ -41,7 +38,7 @@ public class Question14 {
 		System.out.println("A Média da Turma é " + media_turma);
 		System.out.println("*********************FIM DO PROGRAMA**********************");
 
-		
+		 
 		
 	}
 
