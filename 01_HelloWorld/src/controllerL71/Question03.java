@@ -20,12 +20,12 @@ public class Question03 {
 			y--;
 		}
 		for (y = 0; y < 20; y++) {
-			if(y < 19) {
+			//if(y < 19) {
 				System.out.print(nB[y] + " - ");
-			} else {
-				System.out.println(nB[y]);
+			//} else {
+				//System.out.println(nB[y]);
 				
-			}
+			//}
 			}
 			System.out.println("*********************FIM DO PROGRAMA**********************");
 			
