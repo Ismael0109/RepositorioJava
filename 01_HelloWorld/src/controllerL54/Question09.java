@@ -9,7 +9,11 @@ public class Question09 {
 	 */
 
 	public static void main(String[] args) {
-		int x = Teclado.lerInt("Digite um Número de 1 a 7");
+  int x = 0;
+  while ((x != 1) && (x != 2) && (x != 3) && (x != 4) && (x != 5) && (x != 6) && (x != 7)) {
+
+		x = Teclado.lerInt("Digite um Número de 1 a 7");
+
 		if (x == 1) {
 			System.out.println("O dia " + x + " é Domingo");
 			
@@ -31,12 +35,11 @@ public class Question09 {
 		} else if (x == 7) {
 			System.out.println("O dia " + x + " é Sábado");
 			
-		} //else {
-			//while ((x != 1) && (x != 2) && (x != 3) && (x != 4) && (x != 5) && (x != 6) && (x != 7)) {
-			//	System.out.println("Favor, digitar um valor válido!!");
-				//x = Teclado.lerInt("Digite um Número de 1 a 7");
+		} else {
+			
+			System.out.println("Favor, digitar um valor válido!!");
 				
-			//}
+			}
 		}
 
 	}
